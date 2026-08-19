@@ -178,19 +178,4 @@ The application uses **MongoDB** for storing:
 │
 ├── .gitignore
 └── README.md
-##  Author
 
-### Nikhil Ragala
-
-**B.Tech — Aerospace Engineering**  
-**Indian Institute of Technology Madras**
-
-🔗 **GitHub:** [Nikhil Ragala](https://github.com/Nikhil-Ragala)
-
----
-
-##  Repository
-
-If you found this project useful, consider giving the repository a ⭐.
-
-🔗 **Repository:** [Expense Tracker](https://github.com/Nikhil-Ragala/Expensive-Tracker)
