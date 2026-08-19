@@ -1,154 +1,196 @@
+#  Expense Management System
 
-# Expense Management System using MERN Stack
+A full-stack **Expense Management System** built using the **MERN stack** — MongoDB, Express.js, React.js, and Node.js.
 
-### Live Website: https://main.d1sj7cd70hlter.amplifyapp.com/
+The application allows users to securely manage their expenses, track transactions, analyze spending patterns, and view their financial activity through an interactive dashboard.
 
-### Vercel Link: https://expense-tracker-app-three-beryl.vercel.app/
+---
 
-## Project Description:
+##  Project Overview
 
-    The Expense Management System is a web-based application designed to assist users in tracking and managing their daily expenses. This system is built using the MERN stack (MongoDB, Express.js, React.js, and Node.js) to create a scalable, responsive, and user-friendly application.
+The Expense Management System is a web-based application designed to simplify daily expense tracking and financial management.
 
-## Objectives:
+Users can create an account, securely log in, add expenses, update or delete transactions, categorize spending, and monitor their financial activity through a responsive dashboard.
 
-    1. Simplify expense tracking for individuals and organizations.
+This project demonstrates practical implementation of **full-stack development, REST APIs, authentication, database management, CRUD operations, and frontend-backend integration**.
 
-    2. Provide detailed insights into spending patterns to enable better financial management.
+---
 
-    3. Offer a platform for users to create, update, and delete expenses and categories.
+##  Objectives
 
-    4. Generate comprehensive reports based on user-defined time periods and categories.
+- Simplify daily expense tracking.
+- Provide an organized view of financial transactions.
+- Help users understand their spending patterns.
+- Allow users to create, update, and delete expenses.
+- Provide visual insights into spending.
+- Build a responsive and user-friendly MERN application.
 
-## Features
+---
 
+##  Features
 
-- User Authentication and Authorization:
+###  User Authentication
 
-    Allow users to sign up and log in to their personal accounts using secure authentication mechanisms.
-Implement role-based access control for administrative tasks.
+- User registration and login
+- JWT-based authentication
+- Password hashing using bcrypt
+- Protected user-specific data
+- User avatar selection
 
-- Expense and Category Management:
+###  Expense Management
 
-    Enable users to create, update, and delete expense entries and categories.
-Track expenses by date, category, and description.
-Support attaching receipts or other relevant documents to expense entries.
-
-- Dashboard and Reporting:
-
-    Provide a visual dashboard displaying an overview of the user's expenses, including total expenses, expenses by category, and recent transactions.
-
-    Generate reports based on selected date ranges and categories, displaying pie charts and bar graphs to help users understand their spending patterns.
-    
-
-- Responsive User Interface:
-
-    Design a clean, responsive user interface that works seamlessly across desktop, tablet, and mobile devices.
-    
-    Utilize React.js for building reusable UI components and managing state effectively.
-
-
-## Technical Architecture:
-
-- Frontend:
-
-    Utilize React.js for building the user interface, tsparticle library for awesome background effect and used other libraries like unique-names-generator, react-datepicker, moment
-
-    Implement responsive design using CSS frameworks like Bootstrap and Material-Icons.
-
-- Backend:
-
-    Use Node.js and Express.js to build a RESTful API for handling client requests and serving as the application's backend.
-
-    Implement authentication and authorization using JSON Web Tokens (JWT) and middleware to protect endpoints.
-
-- Database:
-
-    Store all data, including user information, expense entries, and categories, in MongoDB, a NoSQL database.
-
-    Implement Mongoose ORM for schema definition and validation.
-
-- Deployment:
-
-    Deploy the application to a cloud provider like AWS and render.
-    frontend has deployed on AWS and backend on Render.
-
-    Set up Continuous Integration and Continuous Deployment (CI/CD) pipelines for automated builds and deployments.
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/Priyanshu9898/Expense-Tracker-App
-```
-
-Go to the project directory
-
-```bash
-  cd Expense-Tracker-App
-```
-
-Go to the frontend directory and Install dependencies
-
-```bash
-  cd frontend
-```
-```bash
-  npm install
-```
-
-Go to the backend directory and Install dependencies
-
-```bash
-  cd backend
-```
-```bash
-  npm install
-```
-
-Start the frontend server
-
-```bash
-  npm start
-```
-
-
-Start the backend server
-
-```bash
-  npm run dev
-```
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file in backend folder
-
-create config folder and add config.env file in it and all all env variables there.
-
-`MONGO_URL` : Your MongoDB Connection String
-
-`PORT`: PORT number
-
-
-## Tech Stack
-
-**Client:** React, Redux, react-bootstrap, Material Icons, tsparticles
-
-**Server:** Node, Express
-
-**Database:** MongoDB
-
-
-## Screenshots
-
-![App Screenshot](https://i.postimg.cc/6qLR3WNt/Expense-Management-System-Brave-19-04-2023-11-08-53.png)
-
-![App Screenshot](https://i.postimg.cc/DynLNXqZ/Expense-Management-System-Brave-19-04-2023-11-08-59.png)
-
-![App Screenshot](https://i.postimg.cc/Dy6L3wgc/Expense-Management-System-Brave-19-04-2023-11-15-46.png)
-
-![App Screenshot](https://i.postimg.cc/13YF47bn/Expense-Management-System-Brave-19-04-2023-11-15-54.png)
-
-![App Screenshot](https://i.postimg.cc/rwpWV2Z2/Expense-Management-System-Brave-19-04-2023-11-16-01.png)
-
-
-
+- Add new transactions
+- View transaction history
+- Edit existing transactions
+- Delete transactions
+- Track transaction amount
+- Track transaction date
+- Categorize expenses
+- Add transaction descriptions
+
+###  Dashboard & Analytics
+
+- Total expense overview
+- Recent transaction history
+- Category-based expense analysis
+- Visual representation of expenses
+- Interactive charts
+- Spending pattern analysis
+
+###  Responsive User Interface
+
+- Responsive React.js interface
+- Clean dashboard
+- Reusable React components
+- Responsive layouts
+- Interactive UI elements
+- Animated background effects using TSParticles
+
+---
+
+##  Technical Architecture
+
+### Frontend
+
+The frontend is developed using **React.js** and provides the user interface for authentication, transaction management, and expense visualization.
+
+Technologies and libraries include:
+
+- React.js
+- Redux
+- Axios
+- React Bootstrap
+- Material Icons
+- React Datepicker
+- Moment.js
+- TSParticles
+- Unique Names Generator
+
+### Backend
+
+The backend is developed using **Node.js and Express.js** and provides RESTful APIs for authentication and transaction management.
+
+Technologies include:
+
+- Node.js
+- Express.js
+- JWT
+- bcrypt
+- Mongoose
+- CORS
+- Helmet
+- Morgan
+- dotenv
+
+### Database
+
+The application uses **MongoDB** for storing:
+
+- User information
+- Authentication data
+- Expense transactions
+- Transaction categories
+
+**Mongoose** is used for schema definition and database interaction.
+
+---
+
+##  Application Architecture
+
+```text
+                    ┌─────────────────┐
+                    │      User       │
+                    └────────┬────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │ React Frontend  │
+                    │                 │
+                    │ Authentication  │
+                    │ Dashboard       │
+                    │ Transactions    │
+                    │ Analytics       │
+                    └────────┬────────┘
+                             │
+                         REST APIs
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │ Express + Node  │
+                    │     Backend     │
+                    │                 │
+                    │ Auth APIs       │
+                    │ Transaction API │
+                    └────────┬────────┘
+                             │
+                             ▼
+                    ┌─────────────────┐
+                    │  MongoDB Atlas  │
+                    │                 │
+                    │ Users           │
+                    │ Transactions    │
+                    └─────────────────┘
+
+                    Expensive-Tracker/
+│
+├── backend/
+│   ├── controllers/
+│   ├── DB/
+│   ├── models/
+│   ├── Routers/
+│   ├── config/
+│   │   └── config.env        # Local only - not committed
+│   │
+│   ├── app.js
+│   ├── package.json
+│   └── package-lock.json
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── Components/
+│   │   ├── Pages/
+│   │   ├── utils/
+│   │   └── ...
+│   │
+│   ├── package.json
+│   └── package-lock.json
+│
+├── .gitignore
+└── README.md
+##  Author
+
+### Nikhil Ragala
+
+**B.Tech — Aerospace Engineering**  
+**Indian Institute of Technology Madras**
+
+🔗 **GitHub:** [Nikhil Ragala](https://github.com/Nikhil-Ragala)
+
+---
+
+##  Repository
+
+If you found this project useful, consider giving the repository a ⭐.
+
+🔗 **Repository:** [Expense Tracker](https://github.com/Nikhil-Ragala/Expensive-Tracker)
