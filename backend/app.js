@@ -17,10 +17,12 @@ const port = process.env.PORT;
 connectDB();
 
 const allowedOrigins = [
+  "http://localhost:3000",
   "https://main.d1sj7cd70hlter.amplifyapp.com",
   "https://expense-tracker-app-three-beryl.vercel.app",
-  // add more origins as needed
 ];
+  // add more origins as needed
+
 
 // Middleware
 app.use(express.json());
